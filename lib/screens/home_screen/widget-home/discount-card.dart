@@ -58,7 +58,7 @@ class DiscountCard extends StatelessWidget {
                                 fontSize: textSizetHeading,
                                 color: Colors.white),
                           ),
-                          Text("-22%",
+                          Text("-23%",
                               style: TextStyle(
                                   fontSize: 48,
                                   color: Colors.white,
