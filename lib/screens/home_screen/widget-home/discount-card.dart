@@ -60,7 +60,7 @@ class DiscountCard extends StatelessWidget {
                           ),
                           Text(" khuyen mai anh quan-23%",
                               style: TextStyle(
-                                  fontSize: 48,
+                                  fontSize: 24,
                                   color: Colors.white,
                                   fontWeight: FontWeight.bold))
                         ],

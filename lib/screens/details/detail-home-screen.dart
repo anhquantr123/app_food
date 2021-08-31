@@ -6,7 +6,7 @@ class DetailHomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      child: null,
+      child: Text("this is detali "),
     );
   }
 }

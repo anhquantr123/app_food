@@ -1,5 +1,7 @@
 import 'package:app_food/constant/constants.dart';
+import 'package:app_food/screens/details/detail-home-screen.dart';
 import 'package:app_food/screens/home_screen/home-screen.dart';
+import 'package:app_food/screens/home_screen/widget-home/bottom-nav-bar.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -22,7 +24,17 @@ class _MyAppState extends State<MyApp> {
         primaryColor: primaryColor,
         scaffoldBackgroundColor: Colors.white,
       ),
-      home: HomeScreen(),
+      home:DefaultTabController(
+        length: 4,
+        child: Scaffold(
+          bottomNavigationBar: BottomNaviagtionBar(),
+          body: TabBarView(children: [
+            HomeScreen(),
+            DetailHomeScreen(),
+            HomeScreen(),
+            DetailHomeScreen()
+          ],),
+        ),),
     );
   }
 }
